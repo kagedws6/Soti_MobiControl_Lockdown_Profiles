@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Android/Desktop Lockdown</title>
+<style type="text/css">
+
+html, body { height: 99.3%; }
+
+body {
+	margin: 4px 4px 0px 4px;
+	background: #FFF;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+#Header {
+	background: url('<MCImg_BkgHeaderRepeat.png>') repeat-x;
+	height: 71px;
+	width: 100%;
+}
+
+#Header .lockicon {
+	background: url('<MCImg_HeaderLock.png>') no-repeat;
+	width: 69px;
+	height: 71px;
+	float: left;
+	position: absolute;
+}
+
+#Header .Title {
+	font: bold 30px arial,sans-serif;
+	text-align: center;	
+	line-height: 71px;
+	color: #fff;
+	margin-left: 69px;
+	display:block;
+}
+
+#Main {
+	text-align:center;
+	margin: 4px 0 100px;
+}
+
+#Main .row {
+	display:table;
+	white-space:nowrap;
+	margin: 0px auto;
+}
+
+#Main .row ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+	display: table-row;
+	white-space:nowrap;
+}
+
+#Main .row ul br {clear: both;}
+
+#Main .row ul li {
+	width: 149px;
+	height: 153px;
+	padding: 2px;
+	/* border: 2px #666666 solid; */
+	margin: 2px 4px 2px 0px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #FFF;
+	position: relative;
+	display:table-cell;
+	float:left
+}
+
+#Main .row ul li img {
+	border: 0;
+	width: 86px;
+	height: 86px;
+	padding: 12px;
+}
+
+#Main .row ul li .txt {
+	color: #666666;
+	font: bold 16px arial,sans-serif;
+}
+
+#Footer {
+	font: bold 30px arial,sans-serif;
+	color: #fff;
+	position:fixed;
+	bottom:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	height: 57px;
+}
+/* IE7+ fix */
+html > body #Footer { 
+	margin:0 0 0 -4px; 
+	padding:0 4px;
+}
+
+#Footer .FooterContainer {
+	margin:0;
+	display:block;
+	overflow:hidden;
+	height: 57px;
+	line-height: 57px;
+	background: url('<MCImg_BkgFooterRepeat.jpg>') repeat-x;	
+}
+/* IE7+ fix */
+html > body #Footer .FooterContainer { 
+	margin:0 8px 0 0; 
+}
+
+#Footer .FooterContainer .FooterBg {
+	background: url('<MCImg_poweredbysoti.jpg>') no-repeat;
+	width: 426px;
+	height: 57px;
+	float: right;
+}
+
+#Footer, .push {
+	height: 2em;
+	height: 57px \0/;
+}
+
+
+</style>
+
+<!--[if lt IE 8]>
+<style type="text/css">
+#Main .row ul {display:inline-block;}
+#Main .row ul{display:inline; }
+#Main .row ul li{display:inline-block}
+#Main .row ul li{ display:inline;}
+#Main .row ul a{ display:inline-block;}
+#Main{text-align:center}
+</style>
+<![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="Header">
+		<div class="lockicon"></div>
+		<span class="Title">SOTI MobiControl</span>
+	</div>
+
+	<div id="Main">
+		<div class="row">
+			<ul>
+				<!-- To display the image for the item rather than use the EXE icon use this line instead
+				<li><A href ="<MCLink0>"><img src="<MCDispImg0>" /><div class="txt"><MCDISP0></div></a></li>-->
+				<li><A href ="<MCLink0>"><img src="<MCExeIcon0>" onerror="this.style.display='none'" /><div class="txt"><MCDISP0></div></a></li>
+				<li><A href ="<MCLink1>"><img src="<MCExeIcon1>" onerror="this.style.display='none'" /><div class="txt"><MCDISP1></div></a></li>
+			</ul>
+		</div>
+		<div class="row">
+			<ul>
+				<li><A href ="<MCLink2>"><img src="<MCExeIcon2>" onerror="this.style.display='none'" /><div class="txt"><MCDISP2></div></a></li>
+				<li><A href ="<MCLink3>"><img src="<MCExeIcon3>" onerror="this.style.display='none'" /><div class="txt"><MCDISP3></div></a></li>
+			</ul>
+		</div>
+		<div class="row">
+			<ul>
+				<li><A href ="<MCLink4>"><img src="<MCExeIcon4>" onerror="this.style.display='none'" /><div class="txt"><MCDISP4></div></a></li>
+				<li><A href ="<MCLink5>"><img src="<MCExeIcon5>" onerror="this.style.display='none'" /><div class="txt"><MCDISP5></div></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="push"></div>
+</div>
+<div id="Footer">
+	<div class="FooterContainer">
+		<div class="FooterBg"></div>
+	</div>
+</div>
+</body>
+</html>
